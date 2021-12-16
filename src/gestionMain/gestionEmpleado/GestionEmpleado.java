@@ -1,4 +1,4 @@
-package uiMain.gestionEmpleado;
+package gestionMain.gestionEmpleado;
 
 public class GestionEmpleado {
     

@@ -1,7 +1,8 @@
-package uiMain;
+package gestionMain;
 
 import java.util.Scanner;
-import uiMain.gestionCliente.GestionCliente;
+
+import gestionMain.gestionCliente.GestionCliente;
 
 public class main {
     public static void main(String[] args) {

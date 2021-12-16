@@ -1,4 +1,4 @@
-package uiMain.gestionCliente;
+package gestionMain.gestionCliente;
 
 import gestionApp.Pedido.Cliente;
 
