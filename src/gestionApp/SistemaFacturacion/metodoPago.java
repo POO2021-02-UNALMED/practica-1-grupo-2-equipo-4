@@ -1,5 +1,5 @@
 package gestionApp.SistemaFacturacion;
 
-public abstract class metodoPago{
-    
+public class metodoPago{
+	
 }

@@ -1,8 +1,10 @@
 package gestionApp.personal;
 
-import java.io.Serializable;
+public class Cajero extends Empleado i{
 
 
+<<<<<<< HEAD
+=======
 public class Cajero extends Empleado implements Serializable {
 
     public Cajero(String nombre, int cedula, double sueldo, int numeroContacto, String correo) {
@@ -21,6 +23,7 @@ public class Cajero extends Empleado implements Serializable {
     }
     
 
+>>>>>>> 2af86afcd29c69d9ea93b1b39b1fb23610efc043
     
 
     
