@@ -7,7 +7,7 @@ import gestionApp.Pedido.Orden;
 public class ImprimirFactura {
     public static void imprimirFacturacion(){
 
-        System.out.print("\tFACTURA DE LA ORDEN: " + getID() );
+        System.out.print("\tFACTURA DE LA ORDEN: " + Orden.getID() );
         System.out.print("\nLos productos ha pagar son: ");
         Orden.verCarritos();
         System.out.print("\nEl total ha pagar es: " + Orden.generarTotal());
