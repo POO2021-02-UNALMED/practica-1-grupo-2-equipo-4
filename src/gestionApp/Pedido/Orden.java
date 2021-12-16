@@ -14,6 +14,7 @@ public class Orden extends Producto {
 	int total=0;
 	int ID;
 	String estado;
+	
 	static ArrayList<Orden> carrito = new ArrayList<>();
 
 
