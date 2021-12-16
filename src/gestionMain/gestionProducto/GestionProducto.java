@@ -1,4 +1,4 @@
-package uiMain.gestionProducto;
+package gestionMain.gestionProducto;
 
 public class GestionProducto {
     

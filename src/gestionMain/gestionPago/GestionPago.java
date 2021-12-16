@@ -1,4 +1,4 @@
-package uiMain.gestionPago;
+package gestionMain.gestionPago;
 
 public class GestionPago {
     

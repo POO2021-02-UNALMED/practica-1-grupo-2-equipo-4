@@ -11,7 +11,7 @@ public class main {
 
         do {
             try {
-                System.out.print("\t MENU PRINCIPAL");
+                System.out.print("\t MENU PRINCIPAL"+"\n1. Ingrese sus datos para poder Ordenar "+"\n2. Ordenar productos ");
                 opcion = scan.nextInt();
                 switch (opcion) {
                     case 1: 

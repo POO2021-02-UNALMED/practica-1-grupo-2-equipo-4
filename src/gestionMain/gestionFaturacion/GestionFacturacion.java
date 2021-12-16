@@ -1,4 +1,4 @@
-package uiMain.gestionFaturacion;
+package gestionMain.gestionFaturacion;
 
 public class GestionFacturacion {
     
