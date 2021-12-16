@@ -3,34 +3,50 @@ package gestionApp.Pedido;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import javax.sound.sampled.Port;
-
 public class Producto implements Serializable {
 
-   
-    static ArrayList<Producto> productos = new ArrayList<>();
+    private static ArrayList<Producto> inventario = new ArrayList<>();
+    private static ArrayList<Producto> productos = new ArrayList<>();
     private int codigo;
     private String nombre;
-    enum tiposProducto {sandwiches,bebidas, extras,subdia};    
-    enum tiposSandwiches {carne,pollo, bbq,asdf}; 
+ 
+    public enum tiposSubway {CARNE, POLLO, BBQ , DONWHILE}; 
+    public enum tiposBebidas {TE, COCA_COLA, PEPSY, SPRITE}
+    public static tiposSubway tipoSubway;
+    public static tiposBebidas tipoBebidas;
+              
 
-    tiposSandwiches tipoS ;                
-    tiposProducto tipo;
     private double precio;
 
 
 
 
-    public Producto(int codigo, String nombre, tiposProducto tipo, double precio ) {
+    public Producto(int codigo, String nombre,tiposSubway tipo, double precio ) {
         this.codigo = codigo;
         this.nombre = nombre;
-        this.tipo = tipo;
+        this.tipoSubway = tipoSubway;
         this.precio = precio;
+        productos.add(this);
+        inventario.add(this);
         
+    }
+    public Producto(int codigo, String nombre,tiposBebidas tipo, double precio ) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.tipoBebidas = tipoBebidas;
+        this.precio = precio;
+        productos.add(this);
+        inventario.add(this);
         
     }
 
-  
+    public static ArrayList<Producto> getInventario() {
+        return productos;
+    }
+
+    public static void setInventario(ArrayList<Producto> productos) {
+        Producto.productos = productos;
+    }  
 
     public int getCodigo() {
         return codigo;
@@ -48,13 +64,21 @@ public class Producto implements Serializable {
         this.nombre = nombre;
     }
 
-    public tiposProducto getTipo() {
-        return tipo;
+    public static tiposSubway getSubway() {
+        return tipoSubway;
     }
 
-    public void setTipo(tiposProducto tipo) {
-        this.tipo = tipo;
+    public void setSubway(tiposSubway tipoSubway) {
+        this.tipoSubway = this.tipoSubway;
     }
+    public static tiposBebidas getBebidas() {
+        return tipoBebidas;
+    }
+
+    public void tipoBebidas(tiposBebidas tipo) {
+        this.tipoBebidas = tipoBebidas;
+    }
+
 
     public double getPrecio() {
         return precio;
@@ -64,13 +88,25 @@ public class Producto implements Serializable {
         this.precio = precio;
     }
 
-   public void modificarstock() {
+    public void modificarstock() {
 	   
    }
-   public void agregarProducto(){
-       
+    public static void agregarProducto(Producto producto){
+        productos.add(producto);
    }
-   
+   public static String verProductos() {
+        String resultado = "";
+
+        for (int i = 0; i < productos.size(); i++) {
+            resultado += (i+1) + ". " + productos.get(i) + "\n";
+        }
+        return resultado;
+}
+
+
+
+
+
 
    
 }

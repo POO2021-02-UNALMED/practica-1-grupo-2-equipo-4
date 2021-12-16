@@ -4,8 +4,8 @@ import gestionMain.gestionOrden.RegistrarOrden;
 
 import java.util.ArrayList;
 import java.util.function.DoubleBinaryOperator;
-
 import gestionApp.Pedido.Producto;
+
 public class Orden {
 	int codigo;
 	String nombre;

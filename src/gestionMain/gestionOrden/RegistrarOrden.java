@@ -16,7 +16,7 @@ public class RegistrarOrden {
             try {
                 switch (opcion) {
                     case 1: 
-                        
+                            
                         break;
                     case 2:  
 
