@@ -1,9 +1,6 @@
 package gestionApp.personal;
 
 
-import java.util.ArrayList;
-import gestionApp.personal.Cajero;
-
 public class Administrativo {
 	private   String nombre ;
 	private   int ID ;

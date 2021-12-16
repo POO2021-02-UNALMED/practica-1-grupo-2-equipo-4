@@ -37,6 +37,7 @@ public class EditarCliente {
     }
 
     public static void  editarCedula (Cliente cliente){
+        
         Scanner scan = new Scanner(System.in);
         System.out.println ("Ingrese la Cedula nuevamente");
         String nuevo = scan.nextLine();
