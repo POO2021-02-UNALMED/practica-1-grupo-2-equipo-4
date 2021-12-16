@@ -5,6 +5,7 @@ import java.util.Scanner;
 import gestionApp.Pedido.Producto;
 import gestionApp.Pedido.Producto.tiposBebidas;
 import gestionApp.Pedido.Producto.tiposSandwich;
+import gestionMain.main;
 
 public class RegistroProducto {
     public static void registrarProducto(){
@@ -14,7 +15,7 @@ public class RegistroProducto {
 
         do {
             
-            System.out.print("\t PRODUCTOS TIENDA SANDWICH \n1. Sandwiches \n2. Bebidas \n3. Extras \n4. Regresar");
+            System.out.print("\t PRODUCTOS TIENDA SANDWICH \n1. Sandwiches \n2. Bebidas \n3. Regresar \n");
             opcion = scan.nextInt();
 
                 switch (opcion) {
@@ -26,14 +27,14 @@ public class RegistroProducto {
                         registarBebidas();
                         break;
                     case 3: 
-
+                        main.menuPrincipal();
                         break;
-                    case 4: break;
+
 
 
             }break;
 
-        } while (opcion != 4);
+        } while (opcion != 3);
       
     }
     public static void registarSandwiches(){

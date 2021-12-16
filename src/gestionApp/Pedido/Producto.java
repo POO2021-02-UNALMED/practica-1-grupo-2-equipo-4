@@ -9,17 +9,12 @@ public class Producto implements Serializable {
     protected static ArrayList<Producto> productos = new ArrayList<>();
     protected static int codigo;
     protected static String nombre;
- 
     public enum tiposSandwich {CARNE, POLLO, BBQ , DONWHILE}; 
     public enum tiposBebidas {TE, COCA_COLA, PEPSY, SPRITE}
     public static tiposSandwich tipoSandwich;
-    public static tiposBebidas tipoBebidas;
-              
-    public static int ID;
+    public static tiposBebidas tipoBebidas;     
+
     protected double precio;
-
-
-
 
     public Producto(int codigo, String nombre,tiposSandwich tipo, double precio ) {
         this.codigo = codigo;
@@ -64,11 +59,11 @@ public class Producto implements Serializable {
         this.nombre = nombre;
     }
 
-    public static tiposSandwich getSubway() {
+    public static tiposSandwich getSandwich() {
         return tipoSandwich;
     }
 
-    public void setSubway(tiposSandwich tipoSandwich) {
+    public void setSandwich(tiposSandwich tipoSandwich) {
         this.tipoSandwich = this.tipoSandwich;
     }
     public static tiposBebidas getBebidas() {
@@ -78,7 +73,6 @@ public class Producto implements Serializable {
     public void tipoBebidas(tiposBebidas tipo) {
         this.tipoBebidas = tipoBebidas;
     }
-
 
     public double getPrecio() {
         return precio;
@@ -92,7 +86,7 @@ public class Producto implements Serializable {
 	   
    }
     public static void agregarProducto(Producto producto){
-        ID ++;
+ 
         productos.add(producto);
    }
 

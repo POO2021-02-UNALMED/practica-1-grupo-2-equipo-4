@@ -1,6 +1,5 @@
 package gestionApp.Pedido;
 
-
 import java.util.ArrayList;
 
 public class Orden extends Producto {
@@ -11,9 +10,8 @@ public class Orden extends Producto {
 		super(codigo, nombre, tipo, precio);
 
 	}
-	
-	static ArrayList<Orden> carrito = new ArrayList<>();
 
+	static ArrayList<Orden> carrito = new ArrayList<>();
 
 	public static double generarTotal() {
         double total = 0;
@@ -27,21 +25,15 @@ public class Orden extends Producto {
     }
 	public void anadirproducto(Producto productos) {
 		carrito.add((Orden) productos);
+		ID ++;
 		
 	}
 	public void eliminarprodcto() {
 		carrito.remove(productos);
 	}
-	public void confirmar() {
 
-	}
-	public static int getID(int ID){
-		return ID;
-	}
-	public void set(int ID){
-		this.ID = ID;
-		
-	}
+
+	
 	public static String verCarritos() {
         String resultado = "";
         for (Producto producto : inventario) {
@@ -57,6 +49,6 @@ public class Orden extends Producto {
     }
 
 	public void generarId() {
-		ID = (int)(Math.random()*(79-28+1)+22);
+		int ID = (int) (Math.random()*(3));
 	}
 }

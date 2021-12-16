@@ -13,10 +13,7 @@ public class Cliente implements Serializable {
     private int cel;
     private double gastos;
 
-    // Relacion que tiene el cliente con sus compras
-    private ArrayList<Compra> compras = new ArrayList<>();
 
-    //Constructor
     public Cliente(String cedula, String nombre, int cel) {
         this.cedula = cedula;
         this.nombre = nombre;
@@ -24,15 +21,12 @@ public class Cliente implements Serializable {
 
     }
 
-    // Se agrega el método toString() para mostrar todos los datos de los clientes
     @Override
     public String toString() {
-        return "Cliente :"+"\nCedula: " + cedula + "\nNombre Completo: "+ nombre + "\nCelular: "+ cel;
-            
-                
+        return "Cliente :"+"\nCedula: " + cedula + "\nNombre Completo: "+ nombre + "\nCelular: "+ cel;    
+       
     }
 
-    // Se agregan lo métodos Getters & Setters
     public static ArrayList<Cliente> getClientes() {
         return clientes;
     }
@@ -57,8 +51,6 @@ public class Cliente implements Serializable {
         this.nombre = nombre;
     }
 
-  
-
     public int getCel() {
         return cel;
     }
@@ -75,15 +67,6 @@ public class Cliente implements Serializable {
         this.gastos = gastos;
     }
 
-    public ArrayList<Compra> getCompras() {
-        return compras;
-    }
-
-    public void setCompras(ArrayList<Compra> compras) {
-        this.compras = compras;
-    }
-
-
     public static String verClientes() {
         String resultado = "";
 
@@ -94,12 +77,9 @@ public class Cliente implements Serializable {
         return resultado;
     }
 
-
-
     public static void agregarCliente(Cliente cliente) {
         clientes.add(cliente);
     }
-
 
     public static void eliminarCliente(Cliente cliente) {
         clientes.remove(cliente);

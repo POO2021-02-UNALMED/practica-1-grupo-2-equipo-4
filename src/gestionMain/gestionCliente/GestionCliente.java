@@ -1,7 +1,8 @@
 package gestionMain.gestionCliente;
 
 import java.util.Scanner;
-import gestionApp.Pedido.Cliente;
+
+import gestionMain.main;
 
 public class GestionCliente {
 
@@ -10,7 +11,7 @@ public class GestionCliente {
         int opcion;
 
         do {
-            System.out.println("\tMENU PARA CLIENTE"+"\n1. Ingrese sus datos para hacer su pedido: "+"\n2. Editar datos Ingresados: "+"\n3. Mostrar info del Cliente: ");
+            System.out.println("\tMENU PARA CLIENTE"+"\n1. Ingrese sus datos para hacer su pedido: "+"\n2. Editar datos Ingresados: "+"\n3. Mostrar info del Cliente: \n4. Regresar ");
             opcion = scan.nextInt();
             switch (opcion) {
                 case 1: 
@@ -22,9 +23,10 @@ public class GestionCliente {
                 case 3: 
                     MostrarCliente.mostrarClientes();
                     break;
-                case 4: break;
-                case 5: break;
-                case 6: break;
+                case 4: 
+                    main.menuPrincipal();
+                    break;
+
             }
 
         }while (opcion != 4);
