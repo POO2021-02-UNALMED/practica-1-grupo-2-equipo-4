@@ -7,7 +7,7 @@ public class Producto implements Serializable {
 
     private static ArrayList<Producto> inventario = new ArrayList<>();
     protected static ArrayList<Producto> productos = new ArrayList<>();
-    private int codigo;
+    private static int codigo;
     private static String nombre;
  
     public enum tiposSubway {CARNE, POLLO, BBQ , DONWHILE}; 
@@ -101,22 +101,31 @@ public class Producto implements Serializable {
 
         for (Producto producto : inventario) {
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ab86bc87b7756d6c0ef7d95c33308e86398ea8e6
             resultado += "\n" + producto.toString();
 
 
         }
         return resultado;
     }
+    
     @Override
     public String toString() {
-        return "Producto{" +
-                "codigo=" + codigo +
-                ", nombre='" + nombre + '\'' +
-                ", tipo=" + tipoSubway +
-                ", precioCompra=" + precio+
-                '}';
+        return "Producto:" + "codigo: " + codigo + "|nombre: " + nombre + "|tipo: " + tipoSubway + tipoBebidas+"|precioCompra: " + precio + " ";
     }
+    public static boolean eliminarProducto(int opcion){
+        for (Producto producto : inventario) {
+            if (producto.codigo == codigo) {
+                inventario.remove(producto);
+                return true;
+            }
+        }
 
+        return false;
+    }
 }
+
