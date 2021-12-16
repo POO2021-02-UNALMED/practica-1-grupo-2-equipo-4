@@ -15,10 +15,10 @@ public class Producto implements Serializable {
 
     private int codigo;
     private String nombre;
-    private enum tiposProducto {sandwiches,pollo, postres, papas_y_complementos, bebidas, desayunos, mccafe, mccombo};                       // Implementacion caso de enumeración
+    private enum tiposProducto {sandwiches, bebidas,extras,subdia};                       // Implementacion caso de enumeración
     tiposProducto tipo;
     private double precio;
-    private ArrayList<Compra> productosVendidos = new ArrayList<>();
+    private int stock;
 
 
     public Producto(int codigo, String nombre, tiposProducto tipo, double precio ) {

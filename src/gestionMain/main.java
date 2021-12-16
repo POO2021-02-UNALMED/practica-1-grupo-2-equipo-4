@@ -14,7 +14,7 @@ public class main {
                 System.out.print("\t MENU PRINCIPAL"+"\n1. Ingrese sus datos para poder Ordenar "+"\n2. Ordenar productos ");
                 opcion = scan.nextInt();
                 switch (opcion) {
-                    case 1: 
+                    case 1:
                         GestionCliente.GestionarCliente(); break;
                     case 2: break;
                     case 3: break;
@@ -32,8 +32,3 @@ public class main {
     }
 
 }
-     
-		
-    
-
-
