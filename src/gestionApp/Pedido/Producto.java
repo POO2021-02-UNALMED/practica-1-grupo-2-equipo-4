@@ -102,7 +102,7 @@ public class Producto implements Serializable {
         for (Producto producto : inventario) {
 
 
-            // Se resuelve el método to string de la subclase más específica
+
             resultado += "\n" + producto.toString();
 
 

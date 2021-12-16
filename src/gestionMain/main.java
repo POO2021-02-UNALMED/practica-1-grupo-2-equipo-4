@@ -13,17 +13,17 @@ public class main {
         Scanner scan = new Scanner(System.in);
         int opcion;
 
-               
+
         do {
             try {
                 System.out.print("\t MENU PRINCIPAL"+"\n1. Iniciar pedido "+"\n2. Salir \n ");
                 opcion = scan.nextInt();
-                
+
 
                 switch (opcion) {
-                    case 1: 
+                    case 1:
                         System.out.print("\t Ingrese los siguientes datos: ");
-                        
+
                         menuPrincipal();
                         break;
                     case 2: break;//SALIR
@@ -44,21 +44,21 @@ public class main {
             try {
 
                 switch (opcion) {
-                    case 1: 
-                        GestionCliente.GestionarCliente(); 
+                    case 1:
+                        GestionCliente.GestionarCliente();
                         opcion = 3;
                         break;
-                    case 2: 
+                    case 2:
                         GestionProducto.GestionarProducto();
                         //GestionOrden.GestionarOrden();
                         break;
-                    case 3: 
+                    case 3:
                         GestionCompra.GestionarCompras();
                         break;
-                    case 4: 
+                    case 4:
                         GestionPago.GestionarPago();
                         break;
-                    case 5: 
+                    case 5:
                         GestionFacturacion.GestionarFactura();
                         break;
 
