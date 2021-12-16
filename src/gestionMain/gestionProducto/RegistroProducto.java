@@ -26,7 +26,7 @@ public class RegistroProducto {
                         registarBebidas();
                         break;
                     case 3: 
-
+                        
                         break;
                     case 4: break;
 

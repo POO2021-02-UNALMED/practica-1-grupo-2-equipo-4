@@ -10,7 +10,7 @@ public class EliminarProducto {
 
         Scanner scan = new Scanner(System.in);
         do {
-            System.out.print("\t ELIMINAR PRODUCTO \n1. Para eliminar \n2. Salir");
+            System.out.print("\t ELIMINAR PRODUCTO \n1. Para eliminar: \n2. Salir: ");
             opcion = scan.nextInt();
                 switch (opcion) {
                     case 1:

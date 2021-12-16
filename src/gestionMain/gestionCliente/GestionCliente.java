@@ -10,7 +10,7 @@ public class GestionCliente {
         int opcion;
 
         do {
-            System.out.println("\tMENU PARA CLIENTE"+"\n1. Ingrese sus datos para hacer su pedido"+"\n2. Editar datos Ingresados"+"\n3. Mostrar info del Cliente");
+            System.out.println("\tMENU PARA CLIENTE"+"\n1. Ingrese sus datos para hacer su pedido: "+"\n2. Editar datos Ingresados: "+"\n3. Mostrar info del Cliente: ");
             opcion = scan.nextInt();
             switch (opcion) {
                 case 1: 

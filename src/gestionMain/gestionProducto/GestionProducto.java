@@ -10,7 +10,7 @@ public class GestionProducto {
 
         Scanner scan = new Scanner(System.in);
         do {
-            System.out.print("\t PRODUCTOS \n1. Registro \n2. Imprimir  \n3. Extras \n4. Regresar");
+            System.out.print("\t PRODUCTOS \n1. Registrar orden:  \n2. Mostrar su orden \n3. Regresar: ");
             opcion = scan.nextInt();
 
                 switch (opcion) {
@@ -19,15 +19,12 @@ public class GestionProducto {
                         
                         break;
                     case 2:  
-                        ImprimirOrden.imprimirOrden();
+                        ImprimirProducto.imprimirOrden();
                         break;
-                    case 3: 
-
-                        break;
-                    case 4: break;
+                    case 3: break;
             }break;
 
-        } while (opcion != 4);
+        } while (opcion != 3);
       
     }
 }

@@ -15,7 +15,7 @@ public class Producto implements Serializable {
     public static tiposSubway tipoSubway;
     public static tiposBebidas tipoBebidas;
               
-
+    public static int ID;
     private double precio;
 
 
@@ -92,22 +92,14 @@ public class Producto implements Serializable {
 	   
    }
     public static void agregarProducto(Producto producto){
+        ID ++;
         productos.add(producto);
    }
 
     public static String verProductos() {
-
         String resultado = "";
-
         for (Producto producto : inventario) {
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> ab86bc87b7756d6c0ef7d95c33308e86398ea8e6
-            resultado += "\n" + producto.toString();
-
+            resultado += "\n"+ producto.toString();
 
         }
         return resultado;

@@ -12,7 +12,7 @@ public class RegistroCliente {
         Scanner scan = new Scanner(System.in);
 
         do {
-            System.out.print("\tIngrese porfavor los siguiente campos ");
+            System.out.print("\tIngrese los siguiente campos ");
             System.out.print("\nCedula: ");
             String cedula = scan.nextLine();
             System.out.print("Nombre Completo: ");
