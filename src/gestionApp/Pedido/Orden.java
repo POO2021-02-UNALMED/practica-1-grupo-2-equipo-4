@@ -1,6 +1,7 @@
 package gestionApp.Pedido;
-package clasemath;
+
 import java.util.ArrayList;
+
 
 public class Orden extends Producto {
 	int total=0;
