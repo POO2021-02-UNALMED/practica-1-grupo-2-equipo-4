@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.function.DoubleBinaryOperator;
 
 import gestionApp.Pedido.Producto;
-public class Orden {
+public class Orden extend Producto {
 	int codigo;
 	String nombre;
 	double precio;
@@ -15,16 +15,17 @@ public class Orden {
 
 
 	public void cobrar() {
-
+		
 	}
 	public void anadirproducto() {
-
+		carrito.add(productos);
+		
 	}
 	public void eliminarprodcto() {
-
+		carrito.remove(producto);
 	}
 	public void confirmar() {
-
+		if 
 	}
 
 }
