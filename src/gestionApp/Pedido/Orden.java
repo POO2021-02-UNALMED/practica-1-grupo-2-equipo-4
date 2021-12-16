@@ -1,6 +1,13 @@
 package gestionApp.Pedido;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.lang.Math;
+=======
+
+import java.util.ArrayList;
+
+
+>>>>>>> 1b575e356fda3874cc60ffb50a701a01dcd77537
 public class Orden extends Producto {
 	int total=0;
 	public static int ID;
