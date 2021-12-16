@@ -5,6 +5,7 @@ import gestionMain.gestionOrden.RegistrarOrden;
 import java.util.ArrayList;
 import java.util.function.DoubleBinaryOperator;
 import gestionApp.Pedido.Producto;
+import static java.lang.Math. *;
 
 public class Orden extends Producto {
 	int total=0;
@@ -14,12 +15,11 @@ public class Orden extends Producto {
 		super(codigo, nombre, tipo, precio);
 		//TODO Auto-generated constructor stub
 	}
-<<<<<<< HEAD
-=======
+
 	double total = 0;
 	int ID;
 	String estado;
->>>>>>> 2af86afcd29c69d9ea93b1b39b1fb23610efc043
+
 	
 	static ArrayList<Orden> carrito = new ArrayList<>();
 
@@ -52,5 +52,7 @@ public class Orden extends Producto {
 		
 	}
 
-	
+	public void generarId() {
+		ID = (int)(Math.random()*(79-28+1)+22);
+	}
 }
