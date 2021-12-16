@@ -12,10 +12,10 @@ public class GestionOrden {
             opcion = scan.nextInt();
             switch (opcion) {
                 case 1: 
-                    RegistrarOrden.registrarCliente();
+                    RegistrarOrden.registrarOrden();
                     break;
                 case 2:  
-
+                    
                     break;
                 case 3: 
 

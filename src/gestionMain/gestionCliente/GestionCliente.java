@@ -27,6 +27,6 @@ public class GestionCliente {
                 case 6: break;
             }
 
-        }while (opcion != 6);
+        }while (opcion != 4);
     }
 }    

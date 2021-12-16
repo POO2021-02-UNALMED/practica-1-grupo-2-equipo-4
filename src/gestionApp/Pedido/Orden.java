@@ -1,5 +1,7 @@
 package gestionApp.Pedido;
 
+import gestionMain.gestionOrden.RegistrarOrden;
+
 public class Orden {
 	int total ;
 	String estado;
@@ -20,5 +22,8 @@ public class Orden {
 	public void confirmar() {
 		
 	}
-    
+	public static void realizarOrden(){
+		
+
+    }
 }
