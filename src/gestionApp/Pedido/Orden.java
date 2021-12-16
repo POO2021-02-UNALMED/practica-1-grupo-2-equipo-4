@@ -1,5 +1,5 @@
 package gestionApp.Pedido;
-
+package clasemath;
 import java.util.ArrayList;
 
 public class Orden extends Producto {
@@ -18,7 +18,7 @@ public class Orden extends Producto {
 
         for (Producto producto : productos) {
             total += producto.getPrecio();
-			
+
         }
 		return total;
 
@@ -26,14 +26,14 @@ public class Orden extends Producto {
 	public void anadirproducto(Producto productos) {
 		carrito.add((Orden) productos);
 		ID ++;
-		
+
 	}
 	public void eliminarprodcto() {
 		carrito.remove(productos);
 	}
 
 
-	
+
 	public static String verCarritos() {
         String resultado = "";
         for (Producto producto : inventario) {
@@ -42,13 +42,13 @@ public class Orden extends Producto {
         }
         return resultado;
     }
-    
+
     @Override
     public String toString() {
         return "Producto:" + "codigo: " + codigo + "|nombre: " + nombre + "|tipo: " + tipoSandwich + tipoBebidas+"|precioCompra: " + precio + " ";
     }
 
 	public void generarId() {
-		int ID = (int) (Math.random()*(3));
+		int numero = (int) (Math.random () * 1000000);
 	}
 }
