@@ -5,10 +5,8 @@ import java.util.Scanner;
 import gestionMain.gestionCliente.GestionCliente;
 import gestionMain.gestionCompra.GestionCompra;
 import gestionMain.gestionFaturacion.GestionFacturacion;
-import gestionMain.gestionOrden.GestionOrden;
 import gestionMain.gestionPago.GestionPago;
 import gestionMain.gestionProducto.GestionProducto;
-import gestionMain.gestionProducto.RegistroProducto;
 
 public class main {
     public static void main(String[] args) {

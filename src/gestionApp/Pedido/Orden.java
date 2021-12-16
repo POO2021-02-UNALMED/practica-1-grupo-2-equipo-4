@@ -6,27 +6,27 @@ import java.util.ArrayList;
 import java.util.function.DoubleBinaryOperator;
 import gestionApp.Pedido.Producto;
 
-public class Orden {
+public class Orden extends Producto {
+	public Orden(int codigo, String nombre, tiposBebidas tipo, double precio) {
+		super(codigo, nombre, tipo, precio);
+		//TODO Auto-generated constructor stub
+	}
 	int codigo;
 	String nombre;
 	double precio;
 	int ID;
 	static ArrayList<Orden> carrito = new ArrayList<>();
 
-	public void Producto(int codigo, String nombre, double precio,int ID ) {
-        this.codigo = codigo;
-        this.nombre = nombre;
-        this.precio = precio;
-        Orden.carrito.add(this);
-    }
+
 	public void cobrar() {
-
+		
 	}
-	public void anadirproducto() {
-
+	public void anadirproducto(Producto productos) {
+		carrito.add((Orden) productos);
+		
 	}
-	public void eliminarpedido() {
-
+	public void eliminarprodcto() {
+		carrito.remove(productos);
 	}
 	public void confirmar() {
 
