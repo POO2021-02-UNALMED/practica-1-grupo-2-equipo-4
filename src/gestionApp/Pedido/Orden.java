@@ -12,7 +12,7 @@ public class Orden extends Producto {
 		//TODO Auto-generated constructor stub
 	}
 	double total = 0;
-	int ID;
+	public static int ID;
 	String estado;
 	
 	static ArrayList<Orden> carrito = new ArrayList<>();
