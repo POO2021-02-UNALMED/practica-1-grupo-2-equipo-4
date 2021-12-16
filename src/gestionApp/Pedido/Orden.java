@@ -17,7 +17,7 @@ public class Orden extends Producto {
 	}
 
 	double total = 0;
-	int ID;
+	public static int ID;
 	String estado;
 
 	
