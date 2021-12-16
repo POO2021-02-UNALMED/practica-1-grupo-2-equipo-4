@@ -54,6 +54,7 @@ public class main {
                         break;
                     case 4: 
                         GestionPago.GestionarPago();
+                        break;
                     case 5: 
                         break;
 
@@ -62,7 +63,7 @@ public class main {
                 System.out.print("Ingrese una opcion nuevamente: ");
                 opcion = scan.nextInt();
             }
-        } while (opcion != 2);
+        } while (opcion != 6);
 
     }
 

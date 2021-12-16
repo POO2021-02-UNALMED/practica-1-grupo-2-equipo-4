@@ -5,7 +5,7 @@ import gestionApp.Pedido.Orden;
 
 
 public class RegistrarOrden {
-    public static void registrarOrden() {
+    public static void registradorOrden() {
         int opcion;
         Scanner scan = new Scanner(System.in);
 
@@ -32,9 +32,6 @@ public class RegistrarOrden {
                 System.out.print("Ingrese una opcion nuevamente: ");
                 opcion = scan.nextInt();
             }
-
-
-
 
             opcion = scan.nextInt();
         } while (opcion != 1);
