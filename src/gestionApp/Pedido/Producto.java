@@ -96,13 +96,9 @@ public class Producto implements Serializable {
    }
 
     public static String verProductos() {
-
         String resultado = "";
-
         for (Producto producto : inventario) {
-
-            resultado += "\n" + producto.toString();
-
+            resultado += "\n"+ producto.toString();
 
         }
         return resultado;

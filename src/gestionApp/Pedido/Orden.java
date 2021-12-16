@@ -11,17 +11,21 @@ public class Orden extends Producto {
 		super(codigo, nombre, tipo, precio);
 		//TODO Auto-generated constructor stub
 	}
-	int codigo;
-	String nombre;
-	double precio;
+	int total=0;
 	int ID;
+	String estado;
+	
 	static ArrayList<Orden> carrito = new ArrayList<>();
 
 
-	public void generartotal() {
-		
-		
-	}
+	public static void generartotal() {
+        int total = 0;
+
+        for (Producto producto : productos) {
+            total += producto.getPrecio();
+        }
+
+    }
 	public void anadirproducto(Producto productos) {
 		carrito.add((Orden) productos);
 		
