@@ -30,7 +30,7 @@ public class main {
         } while (opcion != 2);
     }
     public static void menuPrincipal() {
-        System.out.print("MENU CLIENTE: \n1. Ingresar datos para continuar con la orden  \n2. Realizar orden \n3. Factura \n4. Salir ");
+        System.out.print("MENU CLIENTE: \n1. Ingresar datos para continuar con la orden  \n2. Realizar orden \n3. Factura \n4. Salir : \n");
         Scanner scan = new Scanner(System.in);
         int opcion = scan.nextInt();
         do {
@@ -38,11 +38,9 @@ public class main {
                 switch (opcion) {
                     case 1: 
                         GestionCliente.GestionarCliente(); 
-                        opcion = 3;
                         break;
                     case 2: 
                         GestionProducto.GestionarProducto();
-                        //GestionOrden.GestionarOrden();
                         break;
                     case 3:
                         ImprimirFactura.imprimirFacturacion();

@@ -14,12 +14,12 @@ public class RegistroProducto {
 
         do {
             
-            System.out.print("\t PRODUCTOS TIENDA SUBWAY \n1. Subways \n2. Bebidas \n3. Extras \n4. Regresar");
+            System.out.print("\t PRODUCTOS TIENDA SANDWICH \n1. Sandwiches \n2. Bebidas \n3. Extras \n4. Regresar");
             opcion = scan.nextInt();
 
                 switch (opcion) {
                     case 1: 
-                        registarSubway();
+                        registarSandwiches();
                         
                         break;
                     case 2:  
@@ -36,7 +36,7 @@ public class RegistroProducto {
         } while (opcion != 4);
       
     }
-    public static void registarSubway(){
+    public static void registarSandwiches(){
         int opcion;
         tiposSandwich tipoS;
         
