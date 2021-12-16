@@ -6,9 +6,9 @@ import java.util.ArrayList;
 public class Producto implements Serializable {
 
     private static ArrayList<Producto> inventario = new ArrayList<>();
-    private static ArrayList<Producto> productos = new ArrayList<>();
+    protected static ArrayList<Producto> productos = new ArrayList<>();
     private int codigo;
-    private String nombre;
+    private static String nombre;
  
     public enum tiposSubway {CARNE, POLLO, BBQ , DONWHILE}; 
     public enum tiposBebidas {TE, COCA_COLA, PEPSY, SPRITE}
@@ -56,7 +56,7 @@ public class Producto implements Serializable {
         this.codigo = codigo;
     }
 
-    public String getNombre() {
+    public static String getNombre() {
         return nombre;
     }
 
@@ -94,19 +94,29 @@ public class Producto implements Serializable {
     public static void agregarProducto(Producto producto){
         productos.add(producto);
    }
-   public static String verProductos() {
+
+    public static String verProductos() {
+
         String resultado = "";
 
-        for (int i = 0; i < productos.size(); i++) {
-            resultado += (i+1) + ". " + productos.get(i) + "\n";
+        for (Producto producto : inventario) {
+
+
+            // Se resuelve el método to string de la subclase más específica
+            resultado += "\n" + producto.toString();
+
+
         }
         return resultado;
-}
+    }
+    @Override
+    public String toString() {
+        return "Producto{" +
+                "codigo=" + codigo +
+                ", nombre='" + nombre + '\'' +
+                ", tipo=" + tipoSubway +
+                ", precioCompra=" + precio+
+                '}';
+    }
 
-
-
-
-
-
-   
 }

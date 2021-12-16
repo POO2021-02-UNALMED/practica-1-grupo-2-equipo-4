@@ -31,7 +31,7 @@ public class RegistroProducto {
                     case 4: break;
 
 
-            }
+            }break;
 
         } while (opcion != 4);
       
@@ -70,7 +70,7 @@ public class RegistroProducto {
                     case 5: break;
 
 
-            }
+            }break;
 
         } while (opcion != 5);
       
@@ -108,7 +108,7 @@ public class RegistroProducto {
                         break;
                     case 5: break;
 
-            }
+            }break;
 
         } while (opcion != 5);
       
