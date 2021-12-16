@@ -8,13 +8,16 @@ import javax.sound.sampled.Port;
 public class Producto implements Serializable {
 
    
-    
+    static ArrayList<Producto> productos = new ArrayList<>();
     private int codigo;
     private String nombre;
-    private enum tiposProducto {sandwiches,bebidas, extras,subdia};                       
+    enum tiposProducto {sandwiches,bebidas, extras,subdia};    
+    enum tiposSandwiches {carne,pollo, bbq,asdf}; 
+
+    tiposSandwiches tipoS ;                
     tiposProducto tipo;
     private double precio;
-    private int stock;
+
 
 
 
@@ -23,6 +26,7 @@ public class Producto implements Serializable {
         this.nombre = nombre;
         this.tipo = tipo;
         this.precio = precio;
+        
         
     }
 
@@ -63,7 +67,9 @@ public class Producto implements Serializable {
    public void modificarstock() {
 	   
    }
-
+   public void agregarProducto(){
+       
+   }
    
 
    

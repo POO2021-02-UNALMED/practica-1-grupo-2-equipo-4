@@ -1,17 +1,21 @@
 package gestionApp.Pedido;
 
-import gestionApp.Pedido.String;
-import gestionApp.Pedido.Producto.tiposProducto;
+import gestionMain.gestionOrden.RegistrarOrden;
 
+import java.util.ArrayList;
+import java.util.function.DoubleBinaryOperator;
+
+import gestionApp.Pedido.Producto;
 public class Orden {
-	int total ;
-	String estado;
-	private ArrayList<Orden> carrito = new ArrayList<>();
+	int codigo;
+	String nombre;
+	double precio;
+	int ID;
+	static ArrayList<Orden> carrito = new ArrayList<>();
 
-	public Producto(int codigo, String nombre, tiposProducto tipo, double precio ) {
+	public void Producto(int codigo, String nombre, double precio,int ID ) {
         this.codigo = codigo;
         this.nombre = nombre;
-        this.tipo = tipo;
         this.precio = precio;
         Orden.carrito.add(this);
     }
