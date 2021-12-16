@@ -22,22 +22,17 @@ public class EditarCliente {
             System.out.println("\t¿Que dato desea Modificar?"+"\n1. Cedula"+"\n2. Nombre Completo"+"\n3. Celular \n4. Regresar");
             
             opcion = scan.nextInt();
+            switch (opcion) {
+                case 1: 
+                    editarCedula(Cliente.getClientes().get(nCliente-1)); break;
+                case 2:
+                    editarNombre(Cliente.getClientes().get(nCliente-1)); break;
+                case 3: 
+                    editarCel(Cliente.getClientes().get(nCliente-1)); break;
+                case 4: break;
 
-            try {
-                switch (opcion) {
-                    case 1: 
-                        editarCedula(Cliente.getClientes().get(nCliente-1)); break;
-                    case 2:
-                        editarNombre(Cliente.getClientes().get(nCliente-1)); break;
-                    case 3: 
-                        editarCel(Cliente.getClientes().get(nCliente-1)); break;
-                    case 4: break;
-
-                }
-            } catch (Exception e) {
-                System.out.print("Ingrese una opcion nuevamente: ");
-                opcion = scan.nextInt();
             }
+            
         } while (opcion != 4);
     }
 

@@ -1,30 +1,45 @@
 package gestionMain.gestionOrden;
 
 import java.util.Scanner;
-
+import gestionApp.Pedido.Orden;
 
 
 public class RegistrarOrden {
-    public static void registrarCliente() {
+    public static void registrarOrden() {
         int opcion;
         Scanner scan = new Scanner(System.in);
 
         do {
-            System.out.print("\tIngrese porfavor los siguiente campos ");
-            System.out.print("\nCedula: ");
-            String cedula = scan.nextLine();
-            System.out.print("Nombre Completo: ");
-            String nombre = scan.nextLine();
-            System.out.print("Celular: ");
-            int cel = scan.nextInt();
-            //Cliente.agregarCliente(new Cliente(cedula, nombre, cel));
-            System.out.println("Sus datos de han guardado satisfactoriamente");
-            //System.out.println("Eres el numero de cliente: "+Cliente.getNumeroCliente());
-            System.out.print("1. Regresar : ");
+            
+            System.out.print("\t PRODUCTOS SUBWAY \n1. Subways del Dia \n2. Todos los Sandwiches \n3. Bebidas \n4. Adiciones");
+            opcion = scan.nextInt();
+            try {
+                switch (opcion) {
+                    case 1: 
+                        
+                        break;
+                    case 2:  
+
+                        break;
+                    case 3: 
+
+                        break;
+                    case 4: break;
+                    case 5: break;
+                    case 6: break;
+                }
+            } catch (Exception e) {
+                System.out.print("Ingrese una opcion nuevamente: ");
+                opcion = scan.nextInt();
+            }
+
+
+
+
             opcion = scan.nextInt();
         } while (opcion != 1);
 
     }
-
+    
 }
     
