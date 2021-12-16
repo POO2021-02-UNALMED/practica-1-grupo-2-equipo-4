@@ -1,7 +1,6 @@
 package gestionApp.Pedido;
-package clasemath;
 import java.util.ArrayList;
-
+import java.lang.Math;
 public class Orden extends Producto {
 	int total=0;
 	public static int ID;
@@ -41,6 +40,9 @@ public class Orden extends Producto {
 
         }
         return resultado;
+    }
+		public int getID() {
+        return ID;
     }
 
     @Override
