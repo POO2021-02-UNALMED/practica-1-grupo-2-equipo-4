@@ -38,5 +38,13 @@ public class Orden extends Producto {
 	public void confirmar() {
 
 	}
+	public static int getID(int ID){
+		return ID;
+	}
+	public void set(int ID){
+		this.ID = ID;
+		
+	}
 
+	
 }

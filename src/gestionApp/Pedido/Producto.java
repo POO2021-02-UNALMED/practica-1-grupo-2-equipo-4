@@ -15,7 +15,7 @@ public class Producto implements Serializable {
     public static tiposSubway tipoSubway;
     public static tiposBebidas tipoBebidas;
               
-
+    public static int ID;
     private double precio;
 
 
@@ -92,6 +92,7 @@ public class Producto implements Serializable {
 	   
    }
     public static void agregarProducto(Producto producto){
+        ID ++;
         productos.add(producto);
    }
 
