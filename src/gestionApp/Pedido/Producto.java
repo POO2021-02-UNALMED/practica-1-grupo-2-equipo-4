@@ -11,14 +11,14 @@ public class Producto implements Serializable {
         Escribir y explicar finalidad de la clase Producto, junto con sus estructuras de datos cuando sea necesario.
     */
 
-    private static ArrayList<Producto> inventario = new ArrayList<>();
-
+    
     private int codigo;
     private String nombre;
-    private enum tiposProducto {sandwiches,pollo, postres, papas_y_complementos, bebidas, desayunos, mccafe, mccombo};                       // Implementacion caso de enumeración
+    private enum tiposProducto {sandwiches,bebidas, extras};                       // Implementacion caso de enumeración
     tiposProducto tipo;
     private double precio;
-    private ArrayList<Compra> productosVendidos = new ArrayList<>();
+    private int stock;
+
 
 
     public Producto(int codigo, String nombre, tiposProducto tipo, double precio ) {
@@ -26,16 +26,10 @@ public class Producto implements Serializable {
         this.nombre = nombre;
         this.tipo = tipo;
         this.precio = precio;
-        Producto.inventario.add(this);
+        
     }
 
-    public static ArrayList<Producto> getInventario() {
-        return inventario;
-    }
-
-    public static void setInventario(ArrayList<Producto> inventario) {
-        Producto.inventario = inventario;
-    }
+  
 
     public int getCodigo() {
         return codigo;
@@ -69,16 +63,11 @@ public class Producto implements Serializable {
         this.precio = precio;
     }
 
-    public ArrayList<Compra> getProductosVendidos() {
-        return productosVendidos;
-    }
+   public void modificarstock() {
+	   
+   }
 
-    public void setProductosVendidos(ArrayList<Compra> productosVendidos) {
-        this.productosVendidos = productosVendidos;
-    }
+   
 
-    public static  ArrayList<Producto> agregarProducto(Producto producto){
-        Producto.inventario.add(producto);
-        return inventario;
-    }
+   
 }
