@@ -47,8 +47,6 @@ public class main {
                     case 3:
                         ImprimirFactura.imprimirFacturacion();
                         break;
-
-
                 }
             } catch (Exception e) {
                 System.out.print("Ingrese una opcion nuevamente: ");

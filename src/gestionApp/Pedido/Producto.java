@@ -17,6 +17,7 @@ public class Producto implements Serializable {
     protected double precio;
 
     public Producto(int codigo, String nombre,tiposSandwich tipo, double precio ) {
+        
         this.codigo = codigo;
         this.nombre = nombre;
         this.tipoSandwich = tipoSandwich;
