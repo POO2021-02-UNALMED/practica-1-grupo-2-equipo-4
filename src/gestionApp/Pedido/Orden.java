@@ -18,7 +18,8 @@ public class Orden extends Producto {
 	static ArrayList<Orden> carrito = new ArrayList<>();
 
 
-	public void cobrar() {
+	public void generartotal() {
+		
 		
 	}
 	public void anadirproducto(Producto productos) {
