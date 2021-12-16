@@ -7,14 +7,11 @@ import javax.sound.sampled.Port;
 
 public class Producto implements Serializable {
 
-    /*
-        Escribir y explicar finalidad de la clase Producto, junto con sus estructuras de datos cuando sea necesario.
-    */
-
+   
     
     private int codigo;
     private String nombre;
-    private enum tiposProducto {sandwiches,bebidas, extras};                       // Implementacion caso de enumeración
+    private enum tiposProducto {sandwiches,bebidas, extras,subdia};                       
     tiposProducto tipo;
     private double precio;
     private int stock;
