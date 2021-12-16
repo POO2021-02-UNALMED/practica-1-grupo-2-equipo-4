@@ -1,6 +1,6 @@
 package gestionApp.personal;
 
 public class Cocinero {
-	private string nombre;
+	private String nombre;
 	private int id;
 }
