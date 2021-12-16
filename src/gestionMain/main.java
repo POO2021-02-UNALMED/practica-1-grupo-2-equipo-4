@@ -54,7 +54,12 @@ public class main {
                         break;
                     case 4:
                         GestionPago.GestionarPago();
+<<<<<<< HEAD
                     case 5:
+=======
+                        break;
+                    case 5: 
+>>>>>>> 2ded6435ff7fb04af226f74b66a6739bd43983c9
                         break;
 
                 }
@@ -62,7 +67,7 @@ public class main {
                 System.out.print("Ingrese una opcion nuevamente: ");
                 opcion = scan.nextInt();
             }
-        } while (opcion != 2);
+        } while (opcion != 6);
 
     }
 
