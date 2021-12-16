@@ -16,16 +16,12 @@ public class main {
             try {
                 System.out.print("\t MENU PRINCIPAL "+"\n1. Iniciar pedido "+"\n2. Salir");
                 opcion = scan.nextInt();
-                
-
                 switch (opcion) {
                     case 1: 
                         menuPrincipal();
                         break;
                     case 2: break;//SALIR
                     case 3: break;
-
-
                 }
             } catch (Exception e) {
                 System.out.print("Ingrese una opcion nuevamente: ");
@@ -39,7 +35,6 @@ public class main {
         int opcion = scan.nextInt();
         do {
             try {
-
                 switch (opcion) {
                     case 1: 
                         GestionCliente.GestionarCliente(); 
@@ -61,8 +56,5 @@ public class main {
             }
         } while (opcion != 5);
     }
-
-  
-    
 
 }
