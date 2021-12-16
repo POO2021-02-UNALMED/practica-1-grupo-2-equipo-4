@@ -68,8 +68,4 @@ public class Compra implements Serializable {
         return productosVendidos;
     }
 
-    public void setProductos(ArrayList<Compra> productosVendidos) {
-        this.productosVendidos = productosVendidos;
-    }
-
 }

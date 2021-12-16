@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import gestionApp.Pedido.Producto;
 import gestionApp.Pedido.Producto.tiposBebidas;
-import gestionApp.Pedido.Producto.tiposSubway;
+import gestionApp.Pedido.Producto.tiposSandwich;
 
 public class RegistroProducto {
     public static void registrarProducto(){
@@ -26,7 +26,7 @@ public class RegistroProducto {
                         registarBebidas();
                         break;
                     case 3: 
-                        
+
                         break;
                     case 4: break;
 
@@ -38,32 +38,32 @@ public class RegistroProducto {
     }
     public static void registarSubway(){
         int opcion;
-        tiposSubway tipoS;
+        tiposSandwich tipoS;
         
         Scanner scan = new Scanner(System.in);
         do {
             
-            System.out.print("\t SUBWAYS \n1. Carne: $11.999 \n2. BBQ: $12.999 \n3. Pollo: $13.999 \n4. Donwhile: $15.999 \n5. Salir");
+            System.out.print("\t SANDWICH \n1. Carne: $11.999 \n2. BBQ: $12.999 \n3. Pollo: $13.999 \n4. Donwhile: $15.999 \n5. Salir");
             opcion = scan.nextInt();
 
                 switch (opcion) {
                     case 1: 
-                        tipoS = Producto.tipoSubway.CARNE;
+                        tipoS = Producto.tipoSandwich.CARNE;
                         Producto a = new Producto(100, "Carne", tipoS, 11.999); 
                         Producto.agregarProducto(a);   
                         break;
                     case 2:  
-                        tipoS = Producto.tipoSubway.BBQ;
+                        tipoS = Producto.tipoSandwich.BBQ;
                         Producto b = new Producto(101, "BBQ", tipoS, 12.999);
                         Producto.agregarProducto(b);   
                         break;
                     case 3: 
-                        tipoS = Producto.tipoSubway.POLLO;
+                        tipoS = Producto.tipoSandwich.POLLO;
                         Producto c = new Producto(102, "Pollo", tipoS, 13.999);
                         Producto.agregarProducto(c);   
                         break;
                     case 4: 
-                        tipoS = Producto.tipoSubway.DONWHILE;
+                        tipoS = Producto.tipoSandwich.DONWHILE;
                         Producto d = new Producto(102, "Pollo", tipoS, 13.999);
                         Producto.agregarProducto(d);   
                         break;

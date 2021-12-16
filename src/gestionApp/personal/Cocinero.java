@@ -1,6 +1,11 @@
 package gestionApp.personal;
 
-public class Cocinero {
-	private String nombre;
-	private int id;
+public class Cocinero extends Administrativo {
+	
+	
+    public static void cocinero(String nombre, int ID ){
+	
+		
+
+	}
 }

@@ -5,26 +5,26 @@ import java.util.ArrayList;
 
 public class Producto implements Serializable {
 
-    private static ArrayList<Producto> inventario = new ArrayList<>();
+    protected static ArrayList<Producto> inventario = new ArrayList<>();
     protected static ArrayList<Producto> productos = new ArrayList<>();
-    private static int codigo;
-    private static String nombre;
+    protected static int codigo;
+    protected static String nombre;
  
-    public enum tiposSubway {CARNE, POLLO, BBQ , DONWHILE}; 
+    public enum tiposSandwich {CARNE, POLLO, BBQ , DONWHILE}; 
     public enum tiposBebidas {TE, COCA_COLA, PEPSY, SPRITE}
-    public static tiposSubway tipoSubway;
+    public static tiposSandwich tipoSandwich;
     public static tiposBebidas tipoBebidas;
               
     public static int ID;
-    private double precio;
+    protected double precio;
 
 
 
 
-    public Producto(int codigo, String nombre,tiposSubway tipo, double precio ) {
+    public Producto(int codigo, String nombre,tiposSandwich tipo, double precio ) {
         this.codigo = codigo;
         this.nombre = nombre;
-        this.tipoSubway = tipoSubway;
+        this.tipoSandwich = tipoSandwich;
         this.precio = precio;
         productos.add(this);
         inventario.add(this);
@@ -64,12 +64,12 @@ public class Producto implements Serializable {
         this.nombre = nombre;
     }
 
-    public static tiposSubway getSubway() {
-        return tipoSubway;
+    public static tiposSandwich getSubway() {
+        return tipoSandwich;
     }
 
-    public void setSubway(tiposSubway tipoSubway) {
-        this.tipoSubway = this.tipoSubway;
+    public void setSubway(tiposSandwich tipoSandwich) {
+        this.tipoSandwich = this.tipoSandwich;
     }
     public static tiposBebidas getBebidas() {
         return tipoBebidas;
@@ -107,7 +107,7 @@ public class Producto implements Serializable {
     
     @Override
     public String toString() {
-        return "Producto:" + "codigo: " + codigo + "|nombre: " + nombre + "|tipo: " + tipoSubway + tipoBebidas+"|precioCompra: " + precio + " ";
+        return "Producto:" + "codigo: " + codigo + "|nombre: " + nombre + "|tipo: " + tipoSandwich + tipoBebidas+"|precioCompra: " + precio + " ";
     }
     public static boolean eliminarProducto(int opcion){
         for (Producto producto : inventario) {

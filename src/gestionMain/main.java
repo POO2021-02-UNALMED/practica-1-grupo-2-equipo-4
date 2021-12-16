@@ -3,9 +3,7 @@ package gestionMain;
 import java.util.Scanner;
 
 import gestionMain.gestionCliente.GestionCliente;
-import gestionMain.gestionCompra.GestionCompra;
-import gestionMain.gestionFaturacion.GestionFacturacion;
-import gestionMain.gestionPago.GestionPago;
+import gestionMain.gestionFaturacion.ImprimirFactura;
 import gestionMain.gestionProducto.GestionProducto;
 
 public class main {
@@ -16,7 +14,7 @@ public class main {
                
         do {
             try {
-                System.out.print("\t MENU PRINCIPAL"+"\n1. Iniciar pedido "+"\n2. Salir \n3. Menu Administrativo ");
+                System.out.print("\t MENU PRINCIPAL "+"\n1. Iniciar pedido "+"\n2. Salir");
                 opcion = scan.nextInt();
                 
 
@@ -36,7 +34,7 @@ public class main {
         } while (opcion != 2);
     }
     public static void menuPrincipal() {
-        System.out.print("MENU CLIENTE: \n1. Ingresar datos para realizar orden \n2. Realizar orden \n4. Pagos \n5. Factura \n6. Salir ");
+        System.out.print("MENU CLIENTE: \n1. Ingresar datos para continuar con la orden  \n2. Realizar orden \n3. Factura \n4. Salir ");
         Scanner scan = new Scanner(System.in);
         int opcion = scan.nextInt();
         do {
@@ -51,15 +49,10 @@ public class main {
                         GestionProducto.GestionarProducto();
                         //GestionOrden.GestionarOrden();
                         break;
-                    case 3: 
-                        GestionCompra.GestionarCompras();
+                    case 3:
+                        ImprimirFactura.imprimirFacturacion();
                         break;
-                    case 4: 
-                        GestionPago.GestionarPago();
-                        break;
-                    case 5: 
-                        GestionFacturacion.GestionarFactura();
-                        break;
+                    case 4: break;
 
                 }
             } catch (Exception e) {
@@ -69,40 +62,7 @@ public class main {
         } while (opcion != 5);
     }
 
-        public static void menuAdministrativo() {
-            System.out.print("MENU ADMINISTRATIVO: \n1. Ingresar datos para realizar orden \n2. Realizar orden \n3. Compras \n4. Pagos \n5. Factura \n6. Salir ");
-            Scanner scan = new Scanner(System.in);
-            int opcion = scan.nextInt();
-            do {
-                try {
-    
-                    switch (opcion) {
-                        case 1: 
-                            GestionCliente.GestionarCliente(); 
-                            opcion = 3;
-                            break;
-                        case 2: 
-                            GestionProducto.GestionarProducto();
-                            //GestionOrden.GestionarOrden();
-                            break;
-                        case 3: 
-                            GestionCompra.GestionarCompras();
-                            break;
-                        case 4: 
-                            GestionPago.GestionarPago();
-                            break;
-                        case 5: 
-                            GestionFacturacion.GestionarFactura();
-                            break;
-    
-                    }
-                } catch (Exception e) {
-                    System.out.print("Ingrese una opcion nuevamente: ");
-                    opcion = scan.nextInt();
-                }
-            } while (opcion != 5);
-
-    }
+  
     
 
 }
