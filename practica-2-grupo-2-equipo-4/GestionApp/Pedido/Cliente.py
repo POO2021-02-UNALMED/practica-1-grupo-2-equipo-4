@@ -30,14 +30,21 @@ class Cliente:
     def Cliente  (self, cedula, nombre, cel):
         self._cel
         
-        
+    def modificarDatos():
+        pass
+    
+    def cambiarContrasena():
+        pass
+    
+    def Eliminar():
+        pass
     
     
  
           
-    def agregarCliente (self, Cliente):
-        Cliente.append()
-        pass
+    #def agregarCliente (self, Cliente):
+        #Cliente.append()
+        #pass
         
         
             
